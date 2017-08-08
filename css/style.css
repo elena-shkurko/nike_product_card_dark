@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('../fonts/museo-sans-100-webfont.woff2') format('woff2'),
+         url('../fonts/museo-sans-100-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background: url(../img/background.jpg);
+	background-size: cover;
+
+}
+
+/*Card*/
+
+.ba-card {
+	width: 685px;
+	height: 390px;
+	background-color: #111a28;
+	margin: 111px auto;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	-moz-box-shadow:    0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	box-shadow:         0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+}
+
+.ba-card__logo {
+	margin-top: 24px;
+	margin-left: 21px;
+	display: block;
+}
+
+.ba-card__foto {
+	width: 65%;
+	float: left;
+}
+
+.ba-card__img {
+	padding: 50px 25px 25px 25px;
+}
+.ba-card__info {
+	width: 35%;
+	float: left;
+}
+.ba-card__title {
+	font-family: 'museo_sans100', sans-serif;
+	color: #e1e1e1;
+	font-size: 24px;
+	line-height: 1.1;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.ba-card__description {
+	font-family: 'museo_sans100', sans-serif;
+	color: #e1e1e1;
+	font-size: 14px;
+	line-height: 1.1;
+	margin: 0;
+}
+
+/*Rating*/
+
+.ba-rating {
+	position: relative;
+	display: inline-block;
+	width: 54px;
+	font-size: 20px;
+}
+
+.ba-rating:before {
+	content: '★★★★★';
+	color: #9da1a6;
+}
+
+.ba-rating--card {
+	margin-top: 10px;
+}
+
+.ba-rating__highlight {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.ba-rating__highlight:before {
+	content: '★★★★★';
+	color: #f7bf16;
+}
+
+/*List*/
+.ba-card__list {
+	width: 68px;
+	height: 32px;
+	overflow: hidden;
+	background: url(../img/list.svg) center right 5px no-repeat;
+	border: 1px solid #4f5560;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.ba-card__select {
+	font-family: 'museo_sans100', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #e1e1e1;
+	line-height: 1.2;
+    background: transparent;
+    font-size: 16px;
+    outline:none;
+    padding: 5px 0 5px 5px;
+    width: 78px;
+    border: none;
+    
+   }
+
+.ba-card__option {
+	color: #000;
+	font-size: 14px;
+}
+
+/*Button*/
+.ba-card__button {
+	display: block;
+	width: 180px;
+	line-height: 1.3;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'museo_sans100', sans-serif;
+	font-size: 14px;
+	color: #e1e1e1;
+	font-weight: 400;
+	background-color: #202835;
+	border: 1px solid #4f5560;
+	margin-top: 15px; 
+	padding-top: 7px; 
+	padding-bottom: 7px;
+
+}
+.ba-card__button:hover {
+	opacity: .8;
+}
+
+/*Circle*/
+
+.ba-card__nav {
+	list-style: none;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.ba-card_circle {
+	display: inline-block;
+	/*margin-left: 5px;*/
+}
+
+/*.ba-card_circle:first-child {
+	margin-left: 0;
+}*/
+
+.ba-card__link {
+	padding: 3px;
+}
+
+/*.ba-card__link:hover {
+	background: url(../img/circle/circle1-active.png) center center no-repeat;
+}*/
+
+.ba-card__link--active {
+	background: url(../img/circle/circle1-active.png) center center no-repeat;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
